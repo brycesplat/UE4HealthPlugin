@@ -31,7 +31,7 @@
 /wd4244
 /wd4838
 /I .
-/I "F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Source\HealthPlugin\Private"
+/I "F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Source\HealthPlugin\Private"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -231,9 +231,9 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Inc\HealthPlugin"
-/I "F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Source"
-/I "F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Source\HealthPlugin\Public"
+/I "F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Inc\HealthPlugin"
+/I "F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Source"
+/I "F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Source\HealthPlugin\Public"
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -263,12 +263,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"F:\Unreal Engine\4.26\ProjectLabo\Intermediate\Build\Win64\ProjectLaboEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"F:\Unreal Engine\4.26\ProjectLabo\Intermediate\Build\Win64\ProjectLaboEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"F:\Unreal Engine\4.26\ProjectLabo\Intermediate\Build\Win64\ProjectLaboEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.cpp"
-/FI"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Definitions.HealthPlugin.h"
-/Fo"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.cpp.obj"
+/FI"F:\Unreal Engine\4.26\Test1\Intermediate\Build\Win64\Test1Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"F:\Unreal Engine\4.26\Test1\Intermediate\Build\Win64\Test1Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"F:\Unreal Engine\4.26\Test1\Intermediate\Build\Win64\Test1Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.cpp"
+/FI"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Definitions.HealthPlugin.h"
+/Fo"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.cpp.obj"
 /TP
 /GR-
 /W4
