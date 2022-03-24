@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.HealthPlugin.cpp.obj": [
+			"HealthComponent.cpp.obj",
+			"HealthPlugin.cpp.obj"
+		],
+		"Module.HealthPlugin.gen.cpp.obj": [
+			"HealthComponent.gen.cpp.obj",
+			"HealthPlugin.init.gen.cpp.obj"
+		]
+	}
+}
