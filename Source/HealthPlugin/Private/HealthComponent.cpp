@@ -10,8 +10,9 @@ UHealthComponent::UHealthComponent()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	currentHealthBar = 0;
-	health = 0;
+	healthBars.Add(1);
+	currentHealthBar = 1;
+	health = 1;
 }
 
 
@@ -64,6 +65,13 @@ float UHealthComponent::GetPercentHealth()
 	return health / (healthBars[currentHealthBar - 1]);
 }
 
+UFUNCTION(BlueprintPure, Category = "Health")
+float UHealthComponent::GetMaxHealth()
+{
+	return healthBars[currentHealthBar - 1];
+}
+
+
 UFUNCTION(BlueprintCallable, Category = "Health")
 float UHealthComponent::SetHealth(float paraHealth)
 {
@@ -112,7 +120,14 @@ float UHealthComponent::TakeDamage(float damage)
 }
 
 UFUNCTION(BlueprintCallable, Category = "Health")
-float UHealthComponent::TakePercentDamage(float percent)
+float UHealthComponent::TakeCurrentPercentDamage(float percent)
+{
+	health -= (percent * health);
+	return health;
+}
+
+UFUNCTION(BlueprintCallable, Category = "Health")
+float UHealthComponent::TakeMaxPercentDamage(float percent)
 {
 	health -= (percent * healthBars[currentHealthBar - 1]);
 	return health;
@@ -127,7 +142,14 @@ float UHealthComponent::HealHealth(float heal)
 }
 
 UFUNCTION(BlueprintCallable, Category = "Health")
-float UHealthComponent::HealPercentHealth(float percent)
+float UHealthComponent::HealCurrentPercentHealth(float percent)
+{
+	health += (percent * health);
+	return health;
+}
+
+UFUNCTION(BlueprintCallable, Category = "Health")
+float UHealthComponent::HealMaxPercentHealth(float percent)
 {
 	health += (percent * healthBars[currentHealthBar - 1]);
 	CheckOverHealth();

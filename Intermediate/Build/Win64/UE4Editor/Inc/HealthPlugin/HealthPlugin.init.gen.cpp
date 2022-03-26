@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeHealthPlugin_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF446D1C0,
+				0xDE0A8F4D,
 				0xE5F1E9D7,
 				METADATA_PARAMS(nullptr, 0)
 			};

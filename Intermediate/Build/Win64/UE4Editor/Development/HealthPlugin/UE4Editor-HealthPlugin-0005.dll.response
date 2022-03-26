@@ -33,10 +33,10 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"F:\Unreal Engine\4.26\ProjectLabo\Intermediate\Build\Win64\ProjectLaboEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.cpp.obj"
-"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.gen.cpp.obj"
-"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Default.rc2.res"
+"F:\Unreal Engine\4.26\Test1\Intermediate\Build\Win64\Test1Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.cpp.obj"
+"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Module.HealthPlugin.gen.cpp.obj"
+"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\Default.rc2.res"
 "C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
 "C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
@@ -66,8 +66,8 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Binaries\Win64\UE4Editor-HealthPlugin-0005.dll"
-/IMPLIB:"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\UE4Editor-HealthPlugin-0005.suppressed.lib"
-/PDB:"F:\Unreal Engine\4.26\ProjectLabo\Plugins\HealthPlugin\Binaries\Win64\UE4Editor-HealthPlugin-0005.pdb"
+/OUT:"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Binaries\Win64\UE4Editor-HealthPlugin-0005.dll"
+/IMPLIB:"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Intermediate\Build\Win64\UE4Editor\Development\HealthPlugin\UE4Editor-HealthPlugin-0005.suppressed.lib"
+/PDB:"F:\Unreal Engine\4.26\Test1\Plugins\HealthPlugin\Binaries\Win64\UE4Editor-HealthPlugin-0005.pdb"
 /ignore:4078
 /INCLUDE:IMPLEMENT_MODULE_HealthPlugin

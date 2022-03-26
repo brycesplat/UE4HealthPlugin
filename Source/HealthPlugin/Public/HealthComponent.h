@@ -12,7 +12,7 @@ class HEALTHPLUGIN_API UHealthComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	// Sets default values for this component's properties
 	UHealthComponent();
 
@@ -20,7 +20,7 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
@@ -44,6 +44,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Health")
 		float GetPercentHealth();
 
+	UFUNCTION(BlueprintPure, Category = "Health")
+		float GetMaxHealth();
+
 	UFUNCTION(BlueprintCallable, Category = "Health")
 		float SetHealth(float paraHealth);
 
@@ -60,13 +63,19 @@ public:
 		float TakeDamage(float damage);
 
 	UFUNCTION(BlueprintCallable, Category = "Health")
-		float TakePercentDamage(float percent);
+		float TakeCurrentPercentDamage(float percent);
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		float TakeMaxPercentDamage(float percent);
 
 	UFUNCTION(BlueprintCallable, Category = "Health")
 		float HealHealth(float heal);
 
 	UFUNCTION(BlueprintCallable, Category = "Health")
-		float HealPercentHealth(float percent);
+		float HealCurrentPercentHealth(float percent);
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		float HealMaxPercentHealth(float percent);
 
 	UFUNCTION(Blueprintcallable, Category = "Health")
 		bool CheckDeath();

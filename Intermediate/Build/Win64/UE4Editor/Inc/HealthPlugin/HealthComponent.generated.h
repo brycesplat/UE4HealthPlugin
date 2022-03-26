@@ -28,6 +28,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execSetMaxHealth); \
 	DECLARE_FUNCTION(execSetHealthBars); \
 	DECLARE_FUNCTION(execSetHealth); \
+	DECLARE_FUNCTION(execGetMaxHealth); \
 	DECLARE_FUNCTION(execGetPercentHealth); \
 	DECLARE_FUNCTION(execSetup);
 
@@ -46,6 +47,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execSetMaxHealth); \
 	DECLARE_FUNCTION(execSetHealthBars); \
 	DECLARE_FUNCTION(execSetHealth); \
+	DECLARE_FUNCTION(execGetMaxHealth); \
 	DECLARE_FUNCTION(execGetPercentHealth); \
 	DECLARE_FUNCTION(execSetup);
 
