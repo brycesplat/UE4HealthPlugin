@@ -10,9 +10,8 @@ UHealthComponent::UHealthComponent()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	healthBars.Add(1);
-	currentHealthBar = 1;
-	health = 1;
+	currentHealthBar = 0;
+	health = 0;
 }
 
 
@@ -48,6 +47,10 @@ void UHealthComponent::Setup()
 	{
 		health = healthBars[currentHealthBar - 1];
 	}
+	else
+	{
+		health = -1;
+	}
 }
 
 #if WITH_EDITOR
@@ -70,7 +73,6 @@ float UHealthComponent::GetMaxHealth()
 {
 	return healthBars[currentHealthBar - 1];
 }
-
 
 UFUNCTION(BlueprintCallable, Category = "Health")
 float UHealthComponent::SetHealth(float paraHealth)
@@ -161,12 +163,12 @@ bool UHealthComponent::CheckDeath()
 {
 	if (!BreakHealthBar())
 	{
-		return true;
+		if (health <= 0)
+		{
+			return true;
+		}
 	}
-	else
-	{
-		return false;
-	}
+	return false;
 }
 
 UFUNCTION(Blueprintcallable, Category = "Health")
@@ -201,7 +203,7 @@ float UHealthComponent::CheckOverHealth()
 UFUNCTION(Blueprintcallable, Category = "Health")
 bool UHealthComponent::IsDead()
 {
-	if (currentHealthBar == 0)
+	if (currentHealthBar == 1 && health <= 0)
 	{
 		return true;
 	}

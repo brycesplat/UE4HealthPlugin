@@ -20,9 +20,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execCheckOverHealth); \
 	DECLARE_FUNCTION(execBreakHealthBar); \
 	DECLARE_FUNCTION(execCheckDeath); \
-	DECLARE_FUNCTION(execHealPercentHealth); \
+	DECLARE_FUNCTION(execHealMaxPercentHealth); \
+	DECLARE_FUNCTION(execHealCurrentPercentHealth); \
 	DECLARE_FUNCTION(execHealHealth); \
-	DECLARE_FUNCTION(execTakePercentDamage); \
+	DECLARE_FUNCTION(execTakeMaxPercentDamage); \
+	DECLARE_FUNCTION(execTakeCurrentPercentDamage); \
 	DECLARE_FUNCTION(execTakeDamage); \
 	DECLARE_FUNCTION(execSetHealthBarNumber); \
 	DECLARE_FUNCTION(execSetMaxHealth); \
@@ -39,9 +41,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execCheckOverHealth); \
 	DECLARE_FUNCTION(execBreakHealthBar); \
 	DECLARE_FUNCTION(execCheckDeath); \
-	DECLARE_FUNCTION(execHealPercentHealth); \
+	DECLARE_FUNCTION(execHealMaxPercentHealth); \
+	DECLARE_FUNCTION(execHealCurrentPercentHealth); \
 	DECLARE_FUNCTION(execHealHealth); \
-	DECLARE_FUNCTION(execTakePercentDamage); \
+	DECLARE_FUNCTION(execTakeMaxPercentDamage); \
+	DECLARE_FUNCTION(execTakeCurrentPercentDamage); \
 	DECLARE_FUNCTION(execTakeDamage); \
 	DECLARE_FUNCTION(execSetHealthBarNumber); \
 	DECLARE_FUNCTION(execSetMaxHealth); \
